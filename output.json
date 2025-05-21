@@ -1,0 +1,57 @@
+{
+    "info": {
+        "name": "FastAPI API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "read_protected",
+            "request": {
+                "url": "http://localhost:8000/protected",
+                "method": "GET"
+            }
+        },
+        {
+            "name": "register",
+            "request": {
+                "url": "http://localhost:8000/users/register",
+                "method": "POST"
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "url": "http://localhost:8000/users/login",
+                "method": "POST"
+            }
+        },
+        {
+            "name": "create_group",
+            "request": {
+                "url": "http://localhost:8000/groups/",
+                "method": "POST"
+            }
+        },
+        {
+            "name": "add_member",
+            "request": {
+                "url": "http://localhost:8000/groups/{group_id}/add_member",
+                "method": "POST"
+            }
+        },
+        {
+            "name": "add_expense",
+            "request": {
+                "url": "http://localhost:8000/expenses/",
+                "method": "POST"
+            }
+        },
+        {
+            "name": "settle_up",
+            "request": {
+                "url": "http://localhost:8000/settlements/",
+                "method": "POST"
+            }
+        }
+    ]
+}
